@@ -27,7 +27,7 @@
 
     fastify.register(require('./api'), { prefix: 'api' });
 
-    fastify.listen(80, (err, address) => {
+    fastify.listen(80, '0.0.0.0', (err, address) => {
         if (err)
             throw err;
         fastify.log.info(`Server listening on ${address}`);
