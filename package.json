@@ -1,0 +1,27 @@
+{
+  "name": "smart-attendance-panel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build-and-run": "cd ../smart-attendance-web && npm run build && cp -R dist ../smart-attendance-panel/static && cd ../smart-attendance-panel && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickpissurno/smart-attendance-panel.git"
+  },
+  "author": "Patrick Pissurno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrickpissurno/smart-attendance-panel/issues"
+  },
+  "homepage": "https://github.com/patrickpissurno/smart-attendance-panel#readme",
+  "dependencies": {
+    "fastify": "^1.7.0",
+    "fastify-mongodb": "^0.7.1",
+    "fastify-static": "^0.12.0",
+    "moment": "^2.22.2",
+    "mongodb": "^3.1.0"
+  }
+}
